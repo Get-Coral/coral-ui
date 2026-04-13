@@ -4,3 +4,7 @@ export type { CoralCardProps } from "./components/CoralCard";
 export { CoralCard } from "./components/CoralCard";
 export type { CoralErrorAction, CoralErrorStateProps } from "./components/CoralErrorState";
 export { CoralErrorState } from "./components/CoralErrorState";
+export type { CoralMediaCardProps } from "./components/CoralMediaCard";
+export { CoralMediaCard } from "./components/CoralMediaCard";
+export type { CoralSectionProps } from "./components/CoralSection";
+export { CoralSection } from "./components/CoralSection";
