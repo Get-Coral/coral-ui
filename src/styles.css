@@ -1,23 +1,30 @@
 :root {
-  --coral-color-bg: #fdfaf4;
-  --coral-color-surface: #fffdf7;
-  --coral-color-ink: #1c1712;
-  --coral-color-muted: #6a5d4f;
-  --coral-color-brand: #e95d22;
-  --coral-color-brand-contrast: #ffffff;
-  --coral-color-danger: #b92020;
-  --coral-color-danger-contrast: #ffffff;
-  --coral-color-border: #d8cdbc;
+  --coral-color-bg: #060d12;
+  --coral-color-surface: rgb(255 255 255 / 4%);
+  --coral-color-surface-strong: rgb(255 255 255 / 10%);
+  --coral-color-ink: #f0ede8;
+  --coral-color-muted: rgb(240 237 232 / 55%);
+  --coral-color-faint: rgb(240 237 232 / 25%);
+  --coral-color-brand: #8bc6b3;
+  --coral-color-brand-hover: #9ac8aa;
+  --coral-color-brand-soft: rgb(139 198 179 / 20%);
+  --coral-color-brand-soft-hover: rgb(139 198 179 / 30%);
+  --coral-color-brand-contrast: #060d12;
+  --coral-color-danger: #ff6b6b;
+  --coral-color-danger-contrast: #060d12;
+  --coral-color-border: rgb(255 255 255 / 8%);
+  --coral-font-sans: "DM Sans", sans-serif;
+  --coral-font-display: "Fraunces", serif;
   --coral-radius-md: 12px;
   --coral-radius-lg: 18px;
-  --coral-shadow-sm: 0 2px 6px rgb(28 23 18 / 8%);
+  --coral-shadow-sm: none;
 }
 
 .coral-button {
   border: 1px solid transparent;
   border-radius: var(--coral-radius-md);
   cursor: pointer;
-  font: inherit;
+  font-family: var(--coral-font-sans);
   font-weight: 600;
   line-height: 1;
   transition:
@@ -50,15 +57,24 @@
   color: var(--coral-color-brand-contrast);
 }
 
+.coral-button--primary:hover {
+  background: var(--coral-color-brand-hover);
+}
+
 .coral-button--neutral {
-  background: var(--coral-color-surface);
+  background: var(--coral-color-surface-strong);
   border-color: var(--coral-color-border);
   color: var(--coral-color-ink);
 }
 
+.coral-button--neutral:hover {
+  background: color-mix(in srgb, var(--coral-color-surface-strong) 130%, transparent);
+}
+
 .coral-button--danger {
-  background: var(--coral-color-danger);
-  color: var(--coral-color-danger-contrast);
+  background: color-mix(in srgb, var(--coral-color-danger) 18%, transparent);
+  border-color: color-mix(in srgb, var(--coral-color-danger) 40%, transparent);
+  color: var(--coral-color-danger);
 }
 
 .coral-button--sm {
@@ -87,6 +103,7 @@
 
 .coral-card__title {
   color: var(--coral-color-ink);
+  font-family: var(--coral-font-display);
   font-size: 1rem;
   font-weight: 700;
   margin: 0 0 0.65rem;
@@ -108,39 +125,41 @@
 }
 
 .coral-error-state__card {
-  background: var(--coral-color-surface);
-  border: 1px solid var(--coral-color-border);
+  background: transparent;
+  border: 0;
   border-radius: var(--coral-radius-lg);
-  box-shadow: var(--coral-shadow-sm);
-  max-width: 42rem;
-  padding: 1.5rem;
+  box-shadow: none;
+  max-width: 46rem;
+  padding: 0;
   text-align: center;
   width: 100%;
 }
 
 .coral-error-state__code,
 .coral-error-state__eyebrow {
-  color: var(--coral-color-muted);
+  color: var(--coral-color-faint);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.3em;
   margin: 0 0 0.5rem;
   text-transform: uppercase;
 }
 
 .coral-error-state__title {
   color: var(--coral-color-ink);
-  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-family: var(--coral-font-display);
+  font-size: clamp(2.4rem, 6vw, 3.2rem);
   line-height: 1.1;
   margin: 0;
 }
 
 .coral-error-state__description {
   color: var(--coral-color-muted);
-  font-size: 0.98rem;
+  font-family: var(--coral-font-sans);
+  font-size: 1.02rem;
   line-height: 1.45;
   margin: 0.9rem auto 0;
-  max-width: 34rem;
+  max-width: 42rem;
 }
 
 .coral-error-state__actions {
@@ -148,17 +167,17 @@
   flex-wrap: wrap;
   gap: 0.7rem;
   justify-content: center;
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
 }
 
 .coral-error-state__action {
   border-radius: var(--coral-radius-md);
   border: 1px solid transparent;
   cursor: pointer;
-  font: inherit;
-  font-size: 0.93rem;
+  font-family: var(--coral-font-sans);
+  font-size: 0.875rem;
   font-weight: 600;
-  padding: 0.62rem 1rem;
+  padding: 0.65rem 1.25rem;
   text-decoration: none;
   transition:
     transform 0.15s ease,
@@ -179,12 +198,20 @@
 }
 
 .coral-error-state__action--primary {
-  background: var(--coral-color-brand);
-  color: var(--coral-color-brand-contrast);
+  background: var(--coral-color-brand-soft);
+  color: var(--coral-color-brand);
+}
+
+.coral-error-state__action--primary:hover {
+  background: var(--coral-color-brand-soft-hover);
 }
 
 .coral-error-state__action--neutral {
-  background: var(--coral-color-surface);
-  border-color: var(--coral-color-border);
+  background: var(--coral-color-surface-strong);
+  border-color: color-mix(in srgb, var(--coral-color-border) 150%, transparent);
   color: var(--coral-color-ink);
+}
+
+.coral-error-state__action--neutral:hover {
+  background: color-mix(in srgb, var(--coral-color-surface-strong) 140%, transparent);
 }
