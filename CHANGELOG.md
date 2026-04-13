@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/Get-Coral/coral-ui/compare/v1.0.0...v1.0.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* add cards ([93b06b0](https://github.com/Get-Coral/coral-ui/commit/93b06b0fe58f65c88cc72de341332514d445c4b5))
+* add error state ([3095902](https://github.com/Get-Coral/coral-ui/commit/30959028bf5f93086ece1b00fc7b2b8409ca62a2))
+* update styling ([9413daf](https://github.com/Get-Coral/coral-ui/commit/9413daf6aaa590f3bbc935cf7773655727f7feca))
+
 ## 1.0.0 (2026-04-13)
 
 
