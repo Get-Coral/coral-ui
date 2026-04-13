@@ -1,0 +1,63 @@
+{
+  "name": "@get-coral/ui",
+  "version": "0.1.0",
+  "description": "Shared Coral UI components and design tokens",
+  "license": "MIT",
+  "author": "Coral",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./src/styles.css"
+  },
+  "files": [
+    "dist",
+    "src/styles.css",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check": "biome check . && pnpm typecheck",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint . --write",
+    "format": "biome format . --write",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "coral",
+    "design-system",
+    "ui",
+    "react",
+    "components"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-dom": ">=19"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.11",
+    "@get-coral/biome-config": "^0.2.0",
+    "@get-coral/tsconfig": "^0.2.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}

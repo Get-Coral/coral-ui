@@ -1,0 +1,99 @@
+:root {
+  --coral-color-bg: #fdfaf4;
+  --coral-color-surface: #fffdf7;
+  --coral-color-ink: #1c1712;
+  --coral-color-muted: #6a5d4f;
+  --coral-color-brand: #e95d22;
+  --coral-color-brand-contrast: #ffffff;
+  --coral-color-danger: #b92020;
+  --coral-color-danger-contrast: #ffffff;
+  --coral-color-border: #d8cdbc;
+  --coral-radius-md: 12px;
+  --coral-radius-lg: 18px;
+  --coral-shadow-sm: 0 2px 6px rgb(28 23 18 / 8%);
+}
+
+.coral-button {
+  border: 1px solid transparent;
+  border-radius: var(--coral-radius-md);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  line-height: 1;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.coral-button:hover {
+  transform: translateY(-1px);
+}
+
+.coral-button:active {
+  transform: translateY(0);
+}
+
+.coral-button:focus-visible {
+  outline: 2px solid var(--coral-color-brand);
+  outline-offset: 2px;
+}
+
+.coral-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.coral-button--primary {
+  background: var(--coral-color-brand);
+  box-shadow: var(--coral-shadow-sm);
+  color: var(--coral-color-brand-contrast);
+}
+
+.coral-button--neutral {
+  background: var(--coral-color-surface);
+  border-color: var(--coral-color-border);
+  color: var(--coral-color-ink);
+}
+
+.coral-button--danger {
+  background: var(--coral-color-danger);
+  color: var(--coral-color-danger-contrast);
+}
+
+.coral-button--sm {
+  font-size: 0.8125rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.coral-button--md {
+  font-size: 0.9375rem;
+  padding: 0.65rem 0.95rem;
+}
+
+.coral-button--lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.15rem;
+}
+
+.coral-card {
+  background: var(--coral-color-surface);
+  border: 1px solid var(--coral-color-border);
+  border-radius: var(--coral-radius-lg);
+  box-shadow: var(--coral-shadow-sm);
+  color: var(--coral-color-ink);
+  padding: 1rem;
+}
+
+.coral-card__title {
+  color: var(--coral-color-ink);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.65rem;
+}
+
+.coral-card__content {
+  color: var(--coral-color-muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
