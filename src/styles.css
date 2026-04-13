@@ -97,3 +97,94 @@
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+.coral-error-state {
+  align-items: center;
+  color: var(--coral-color-ink);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.coral-error-state__card {
+  background: var(--coral-color-surface);
+  border: 1px solid var(--coral-color-border);
+  border-radius: var(--coral-radius-lg);
+  box-shadow: var(--coral-shadow-sm);
+  max-width: 42rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.coral-error-state__code,
+.coral-error-state__eyebrow {
+  color: var(--coral-color-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.coral-error-state__title {
+  color: var(--coral-color-ink);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.coral-error-state__description {
+  color: var(--coral-color-muted);
+  font-size: 0.98rem;
+  line-height: 1.45;
+  margin: 0.9rem auto 0;
+  max-width: 34rem;
+}
+
+.coral-error-state__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.coral-error-state__action {
+  border-radius: var(--coral-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.93rem;
+  font-weight: 600;
+  padding: 0.62rem 1rem;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.coral-error-state__action:hover {
+  transform: translateY(-1px);
+}
+
+.coral-error-state__action:active {
+  transform: translateY(0);
+}
+
+.coral-error-state__action:focus-visible {
+  outline: 2px solid var(--coral-color-brand);
+  outline-offset: 2px;
+}
+
+.coral-error-state__action--primary {
+  background: var(--coral-color-brand);
+  color: var(--coral-color-brand-contrast);
+}
+
+.coral-error-state__action--neutral {
+  background: var(--coral-color-surface);
+  border-color: var(--coral-color-border);
+  color: var(--coral-color-ink);
+}
