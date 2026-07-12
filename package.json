@@ -30,6 +30,7 @@
     "dev": "tsup --watch",
     "check": "biome check . && pnpm typecheck",
     "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
     "lint": "biome lint . --write",
     "format": "biome format . --write",
     "prepublishOnly": "pnpm build"
@@ -55,9 +56,15 @@
     "@biomejs/biome": "^2.4.11",
     "@get-coral/biome-config": "^0.2.0",
     "@get-coral/tsconfig": "^0.2.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^28.1.0",
     "tsup": "^8.5.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.4"
   }
 }

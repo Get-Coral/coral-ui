@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - '@get-coral/biome-config'
+  - '@get-coral/tsconfig'
