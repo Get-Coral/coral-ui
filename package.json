@@ -6,7 +6,11 @@
     "url": "git+https://github.com/Get-Coral/coral-ui.git"
   },
   "version": "1.0.2",
-  "description": "Shared Coral UI components and design tokens",
+  "description": "Shared Coral UI components and design tokens for building Jellyfin module interfaces",
+  "homepage": "https://getcoral.dev",
+  "bugs": {
+    "url": "https://github.com/Get-Coral/coral-ui/issues"
+  },
   "license": "MIT",
   "author": "Coral",
   "type": "module",
@@ -43,9 +47,14 @@
   "keywords": [
     "coral",
     "design-system",
+    "design-tokens",
     "ui",
+    "ui-components",
     "react",
-    "components"
+    "components",
+    "jellyfin",
+    "self-hosted",
+    "tailwindcss"
   ],
   "publishConfig": {
     "access": "public"
