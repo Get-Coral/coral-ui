@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Get-Coral/coral-ui/compare/v1.0.2...v1.0.3) (2026-09-26)
+
+
+### Bug Fixes
+
+* pin pnpm explicitly so release-please cannot break the build ([917d85a](https://github.com/Get-Coral/coral-ui/commit/917d85a87c8ca31a1ce47b2aa9752227b3478f4c))
+
 ## [1.0.2](https://github.com/Get-Coral/coral-ui/compare/v1.0.1...v1.0.2) (2026-04-13)
 
 

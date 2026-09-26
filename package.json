@@ -1,7 +1,7 @@
 {
   "name": "@get-coral/ui",
   "packageManager": "pnpm@10.32.1",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared Coral UI components and design tokens",
   "license": "MIT",
   "author": "Coral",
