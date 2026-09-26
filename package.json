@@ -1,6 +1,10 @@
 {
   "name": "@get-coral/ui",
   "packageManager": "pnpm@10.32.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Get-Coral/coral-ui.git"
+  },
   "version": "1.0.2",
   "description": "Shared Coral UI components and design tokens",
   "license": "MIT",
