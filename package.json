@@ -19,9 +19,14 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./styles.css": "./src/styles.css"
   },
@@ -35,13 +40,13 @@
     "*.css"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "check": "biome check . && pnpm typecheck",
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "check": "vp check && pnpm typecheck",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run --passWithNoTests",
-    "lint": "biome lint . --write",
-    "format": "biome format . --write",
+    "test": "vp test run --passWithNoTests",
+    "lint": "vp lint --fix",
+    "format": "vp fmt",
     "prepublishOnly": "pnpm build"
   },
   "keywords": [
@@ -67,8 +72,8 @@
     "react-dom": ">=19"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.11",
-    "@get-coral/biome-config": "^0.2.0",
+    "@get-coral/oxfmt-config": "^0.1.0",
+    "@get-coral/oxlint-config": "^0.1.0",
     "@get-coral/tsconfig": "^0.2.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.2",
@@ -76,9 +81,9 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.2.0",
     "jsdom": "^28.1.0",
-    "tsup": "^8.5.0",
+    "publint": "^0.3.25",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1",
-    "vitest": "^3.2.4"
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
   }
 }

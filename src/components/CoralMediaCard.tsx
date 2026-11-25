@@ -46,6 +46,7 @@ export function CoralMediaCard({
         {progressValue !== null ? (
           <div
             className="coral-media-card__progress"
+            // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- a styled bar; <progress> renders differently per browser
             role="progressbar"
             aria-valuemin={0}
             aria-valuemax={100}
