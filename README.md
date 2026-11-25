@@ -15,14 +15,15 @@ pnpm add @get-coral/ui
 
 ```tsx
 import { CoralButton, CoralCard } from "@get-coral/ui";
+
 import "@get-coral/ui/styles.css";
 
 export function Example() {
-  return (
-    <CoralCard title="Shared UI">
-      <CoralButton variant="primary">Launch</CoralButton>
-    </CoralCard>
-  );
+	return (
+		<CoralCard title="Shared UI">
+			<CoralButton variant="primary">Launch</CoralButton>
+		</CoralCard>
+	);
 }
 ```
 

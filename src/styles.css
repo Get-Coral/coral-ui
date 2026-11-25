@@ -1,348 +1,348 @@
 :root {
-  --coral-color-bg: #060d12;
-  --coral-color-surface: rgb(255 255 255 / 4%);
-  --coral-color-surface-strong: rgb(255 255 255 / 10%);
-  --coral-color-ink: #f0ede8;
-  --coral-color-muted: rgb(240 237 232 / 55%);
-  --coral-color-faint: rgb(240 237 232 / 25%);
-  --coral-color-brand: #8bc6b3;
-  --coral-color-brand-hover: #9ac8aa;
-  --coral-color-brand-soft: rgb(139 198 179 / 20%);
-  --coral-color-brand-soft-hover: rgb(139 198 179 / 30%);
-  --coral-color-brand-contrast: #060d12;
-  --coral-color-danger: #ff6b6b;
-  --coral-color-danger-contrast: #060d12;
-  --coral-color-border: rgb(255 255 255 / 8%);
-  --coral-font-sans: "DM Sans", sans-serif;
-  --coral-font-display: "Fraunces", serif;
-  --coral-radius-md: 12px;
-  --coral-radius-lg: 18px;
-  --coral-shadow-sm: none;
+	--coral-color-bg: #060d12;
+	--coral-color-surface: rgb(255 255 255 / 4%);
+	--coral-color-surface-strong: rgb(255 255 255 / 10%);
+	--coral-color-ink: #f0ede8;
+	--coral-color-muted: rgb(240 237 232 / 55%);
+	--coral-color-faint: rgb(240 237 232 / 25%);
+	--coral-color-brand: #8bc6b3;
+	--coral-color-brand-hover: #9ac8aa;
+	--coral-color-brand-soft: rgb(139 198 179 / 20%);
+	--coral-color-brand-soft-hover: rgb(139 198 179 / 30%);
+	--coral-color-brand-contrast: #060d12;
+	--coral-color-danger: #ff6b6b;
+	--coral-color-danger-contrast: #060d12;
+	--coral-color-border: rgb(255 255 255 / 8%);
+	--coral-font-sans: "DM Sans", sans-serif;
+	--coral-font-display: "Fraunces", serif;
+	--coral-radius-md: 12px;
+	--coral-radius-lg: 18px;
+	--coral-shadow-sm: none;
 }
 
 .coral-button {
-  border: 1px solid transparent;
-  border-radius: var(--coral-radius-md);
-  cursor: pointer;
-  font-family: var(--coral-font-sans);
-  font-weight: 600;
-  line-height: 1;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    opacity 0.15s ease;
+	border: 1px solid transparent;
+	border-radius: var(--coral-radius-md);
+	cursor: pointer;
+	font-family: var(--coral-font-sans);
+	font-weight: 600;
+	line-height: 1;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease,
+		opacity 0.15s ease;
 }
 
 .coral-button:hover {
-  transform: translateY(-1px);
+	transform: translateY(-1px);
 }
 
 .coral-button:active {
-  transform: translateY(0);
+	transform: translateY(0);
 }
 
 .coral-button:focus-visible {
-  outline: 2px solid var(--coral-color-brand);
-  outline-offset: 2px;
+	outline: 2px solid var(--coral-color-brand);
+	outline-offset: 2px;
 }
 
 .coral-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
+	cursor: not-allowed;
+	opacity: 0.6;
 }
 
 .coral-button--primary {
-  background: var(--coral-color-brand);
-  box-shadow: var(--coral-shadow-sm);
-  color: var(--coral-color-brand-contrast);
+	background: var(--coral-color-brand);
+	box-shadow: var(--coral-shadow-sm);
+	color: var(--coral-color-brand-contrast);
 }
 
 .coral-button--primary:hover {
-  background: var(--coral-color-brand-hover);
+	background: var(--coral-color-brand-hover);
 }
 
 .coral-button--neutral {
-  background: var(--coral-color-surface-strong);
-  border-color: var(--coral-color-border);
-  color: var(--coral-color-ink);
+	background: var(--coral-color-surface-strong);
+	border-color: var(--coral-color-border);
+	color: var(--coral-color-ink);
 }
 
 .coral-button--neutral:hover {
-  background: color-mix(in srgb, var(--coral-color-surface-strong) 130%, transparent);
+	background: color-mix(in srgb, var(--coral-color-surface-strong) 130%, transparent);
 }
 
 .coral-button--danger {
-  background: color-mix(in srgb, var(--coral-color-danger) 18%, transparent);
-  border-color: color-mix(in srgb, var(--coral-color-danger) 40%, transparent);
-  color: var(--coral-color-danger);
+	background: color-mix(in srgb, var(--coral-color-danger) 18%, transparent);
+	border-color: color-mix(in srgb, var(--coral-color-danger) 40%, transparent);
+	color: var(--coral-color-danger);
 }
 
 .coral-button--sm {
-  font-size: 0.8125rem;
-  padding: 0.5rem 0.75rem;
+	font-size: 0.8125rem;
+	padding: 0.5rem 0.75rem;
 }
 
 .coral-button--md {
-  font-size: 0.9375rem;
-  padding: 0.65rem 0.95rem;
+	font-size: 0.9375rem;
+	padding: 0.65rem 0.95rem;
 }
 
 .coral-button--lg {
-  font-size: 1rem;
-  padding: 0.8rem 1.15rem;
+	font-size: 1rem;
+	padding: 0.8rem 1.15rem;
 }
 
 .coral-card {
-  background: var(--coral-color-surface);
-  border: 1px solid var(--coral-color-border);
-  border-radius: var(--coral-radius-lg);
-  box-shadow: var(--coral-shadow-sm);
-  color: var(--coral-color-ink);
-  padding: 1rem;
+	background: var(--coral-color-surface);
+	border: 1px solid var(--coral-color-border);
+	border-radius: var(--coral-radius-lg);
+	box-shadow: var(--coral-shadow-sm);
+	color: var(--coral-color-ink);
+	padding: 1rem;
 }
 
 .coral-card__title {
-  color: var(--coral-color-ink);
-  font-family: var(--coral-font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 0 0.65rem;
+	color: var(--coral-color-ink);
+	font-family: var(--coral-font-display);
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0 0 0.65rem;
 }
 
 .coral-card__content {
-  color: var(--coral-color-muted);
-  font-size: 0.95rem;
-  line-height: 1.4;
+	color: var(--coral-color-muted);
+	font-size: 0.95rem;
+	line-height: 1.4;
 }
 
 .coral-error-state {
-  align-items: center;
-  color: var(--coral-color-ink);
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 1.5rem;
+	align-items: center;
+	color: var(--coral-color-ink);
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 1.5rem;
 }
 
 .coral-error-state__card {
-  background: transparent;
-  border: 0;
-  border-radius: var(--coral-radius-lg);
-  box-shadow: none;
-  max-width: 46rem;
-  padding: 0;
-  text-align: center;
-  width: 100%;
+	background: transparent;
+	border: 0;
+	border-radius: var(--coral-radius-lg);
+	box-shadow: none;
+	max-width: 46rem;
+	padding: 0;
+	text-align: center;
+	width: 100%;
 }
 
 .coral-error-state__code,
 .coral-error-state__eyebrow {
-  color: var(--coral-color-faint);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  margin: 0 0 0.5rem;
-  text-transform: uppercase;
+	color: var(--coral-color-faint);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.3em;
+	margin: 0 0 0.5rem;
+	text-transform: uppercase;
 }
 
 .coral-error-state__title {
-  color: var(--coral-color-ink);
-  font-family: var(--coral-font-display);
-  font-size: clamp(2.4rem, 6vw, 3.2rem);
-  line-height: 1.1;
-  margin: 0;
+	color: var(--coral-color-ink);
+	font-family: var(--coral-font-display);
+	font-size: clamp(2.4rem, 6vw, 3.2rem);
+	line-height: 1.1;
+	margin: 0;
 }
 
 .coral-error-state__description {
-  color: var(--coral-color-muted);
-  font-family: var(--coral-font-sans);
-  font-size: 1.02rem;
-  line-height: 1.45;
-  margin: 0.9rem auto 0;
-  max-width: 42rem;
+	color: var(--coral-color-muted);
+	font-family: var(--coral-font-sans);
+	font-size: 1.02rem;
+	line-height: 1.45;
+	margin: 0.9rem auto 0;
+	max-width: 42rem;
 }
 
 .coral-error-state__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  justify-content: center;
-  margin-top: 1.4rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7rem;
+	justify-content: center;
+	margin-top: 1.4rem;
 }
 
 .coral-error-state__action {
-  border-radius: var(--coral-radius-md);
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-family: var(--coral-font-sans);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.65rem 1.25rem;
-  text-decoration: none;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+	border-radius: var(--coral-radius-md);
+	border: 1px solid transparent;
+	cursor: pointer;
+	font-family: var(--coral-font-sans);
+	font-size: 0.875rem;
+	font-weight: 600;
+	padding: 0.65rem 1.25rem;
+	text-decoration: none;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
 }
 
 .coral-error-state__action:hover {
-  transform: translateY(-1px);
+	transform: translateY(-1px);
 }
 
 .coral-error-state__action:active {
-  transform: translateY(0);
+	transform: translateY(0);
 }
 
 .coral-error-state__action:focus-visible {
-  outline: 2px solid var(--coral-color-brand);
-  outline-offset: 2px;
+	outline: 2px solid var(--coral-color-brand);
+	outline-offset: 2px;
 }
 
 .coral-error-state__action--primary {
-  background: var(--coral-color-brand-soft);
-  color: var(--coral-color-brand);
+	background: var(--coral-color-brand-soft);
+	color: var(--coral-color-brand);
 }
 
 .coral-error-state__action--primary:hover {
-  background: var(--coral-color-brand-soft-hover);
+	background: var(--coral-color-brand-soft-hover);
 }
 
 .coral-error-state__action--neutral {
-  background: var(--coral-color-surface-strong);
-  border-color: color-mix(in srgb, var(--coral-color-border) 150%, transparent);
-  color: var(--coral-color-ink);
+	background: var(--coral-color-surface-strong);
+	border-color: color-mix(in srgb, var(--coral-color-border) 150%, transparent);
+	color: var(--coral-color-ink);
 }
 
 .coral-error-state__action--neutral:hover {
-  background: color-mix(in srgb, var(--coral-color-surface-strong) 140%, transparent);
+	background: color-mix(in srgb, var(--coral-color-surface-strong) 140%, transparent);
 }
 
 .coral-section {
-  background: var(--coral-color-surface);
-  border: 1px solid var(--coral-color-border);
-  border-radius: 28px;
-  padding: 1.1rem;
+	background: var(--coral-color-surface);
+	border: 1px solid var(--coral-color-border);
+	border-radius: 28px;
+	padding: 1.1rem;
 }
 
 .coral-section__header {
-  align-items: end;
-  display: flex;
-  gap: 0.9rem;
-  justify-content: space-between;
+	align-items: end;
+	display: flex;
+	gap: 0.9rem;
+	justify-content: space-between;
 }
 
 .coral-section__eyebrow {
-  color: var(--coral-color-faint);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  margin: 0;
-  text-transform: uppercase;
+	color: var(--coral-color-faint);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.3em;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 .coral-section__title {
-  color: var(--coral-color-ink);
-  font-family: var(--coral-font-display);
-  font-size: clamp(1.3rem, 2vw, 1.75rem);
-  margin: 0.32rem 0 0;
+	color: var(--coral-color-ink);
+	font-family: var(--coral-font-display);
+	font-size: clamp(1.3rem, 2vw, 1.75rem);
+	margin: 0.32rem 0 0;
 }
 
 .coral-section__subtitle {
-  color: var(--coral-color-muted);
-  font-size: 0.92rem;
-  margin: 0.48rem 0 0;
+	color: var(--coral-color-muted);
+	font-size: 0.92rem;
+	margin: 0.48rem 0 0;
 }
 
 .coral-section__footer {
-  color: var(--coral-color-muted);
-  font-size: 0.86rem;
-  font-weight: 600;
+	color: var(--coral-color-muted);
+	font-size: 0.86rem;
+	font-weight: 600;
 }
 
 .coral-section__content {
-  margin-top: 0.95rem;
+	margin-top: 0.95rem;
 }
 
 .coral-media-card {
-  background: color-mix(in srgb, var(--coral-color-surface) 130%, transparent);
-  border: 1px solid color-mix(in srgb, var(--coral-color-border) 130%, transparent);
-  border-radius: 20px;
-  color: var(--coral-color-ink);
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: minmax(76px, 94px) minmax(0, 1fr);
-  min-width: 0;
-  padding: 0.68rem;
+	background: color-mix(in srgb, var(--coral-color-surface) 130%, transparent);
+	border: 1px solid color-mix(in srgb, var(--coral-color-border) 130%, transparent);
+	border-radius: 20px;
+	color: var(--coral-color-ink);
+	display: grid;
+	gap: 0.75rem;
+	grid-template-columns: minmax(76px, 94px) minmax(0, 1fr);
+	min-width: 0;
+	padding: 0.68rem;
 }
 
 .coral-media-card__media {
-  background: color-mix(in srgb, var(--coral-color-surface-strong) 85%, transparent);
-  border-radius: 14px;
-  min-width: 0;
-  overflow: hidden;
+	background: color-mix(in srgb, var(--coral-color-surface-strong) 85%, transparent);
+	border-radius: 14px;
+	min-width: 0;
+	overflow: hidden;
 }
 
 .coral-media-card__image {
-  aspect-ratio: 4 / 5;
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
+	aspect-ratio: 4 / 5;
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
 }
 
 .coral-media-card__image--placeholder {
-  background:
-    radial-gradient(circle at 18% 20%, rgb(139 198 179 / 30%), transparent 45%),
-    radial-gradient(circle at 80% 70%, rgb(255 107 107 / 22%), transparent 52%),
-    color-mix(in srgb, var(--coral-color-surface-strong) 90%, transparent);
+	background:
+		radial-gradient(circle at 18% 20%, rgb(139 198 179 / 30%), transparent 45%),
+		radial-gradient(circle at 80% 70%, rgb(255 107 107 / 22%), transparent 52%),
+		color-mix(in srgb, var(--coral-color-surface-strong) 90%, transparent);
 }
 
 .coral-media-card__body {
-  align-self: center;
-  min-width: 0;
+	align-self: center;
+	min-width: 0;
 }
 
 .coral-media-card__badge {
-  color: var(--coral-color-faint);
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  margin: 0;
-  text-transform: uppercase;
+	color: var(--coral-color-faint);
+	font-size: 0.66rem;
+	font-weight: 700;
+	letter-spacing: 0.24em;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 .coral-media-card__title {
-  color: var(--coral-color-ink);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0.35rem 0 0;
+	color: var(--coral-color-ink);
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 0.35rem 0 0;
 }
 
 .coral-media-card__subtitle {
-  color: var(--coral-color-muted);
-  font-size: 0.8rem;
-  line-height: 1.35;
-  margin: 0.33rem 0 0;
+	color: var(--coral-color-muted);
+	font-size: 0.8rem;
+	line-height: 1.35;
+	margin: 0.33rem 0 0;
 }
 
 .coral-media-card__description {
-  color: var(--coral-color-muted);
-  font-size: 0.82rem;
-  line-height: 1.45;
-  margin: 0.4rem 0 0;
+	color: var(--coral-color-muted);
+	font-size: 0.82rem;
+	line-height: 1.45;
+	margin: 0.4rem 0 0;
 }
 
 .coral-media-card__progress {
-  background: color-mix(in srgb, var(--coral-color-border) 160%, transparent);
-  border-radius: 999px;
-  height: 6px;
-  margin-top: 0.58rem;
-  overflow: hidden;
+	background: color-mix(in srgb, var(--coral-color-border) 160%, transparent);
+	border-radius: 999px;
+	height: 6px;
+	margin-top: 0.58rem;
+	overflow: hidden;
 }
 
 .coral-media-card__progress > span {
-  background: linear-gradient(90deg, var(--coral-color-brand), #8fc9e2);
-  border-radius: inherit;
-  display: block;
-  height: 100%;
+	background: linear-gradient(90deg, var(--coral-color-brand), #8fc9e2);
+	border-radius: inherit;
+	display: block;
+	height: 100%;
 }
