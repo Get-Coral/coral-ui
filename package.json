@@ -1,89 +1,89 @@
 {
-  "name": "@get-coral/ui",
-  "packageManager": "pnpm@10.32.1",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Get-Coral/coral-ui.git"
-  },
-  "version": "1.0.2",
-  "description": "Shared Coral UI components and design tokens for building Jellyfin module interfaces",
-  "homepage": "https://getcoral.dev",
-  "bugs": {
-    "url": "https://github.com/Get-Coral/coral-ui/issues"
-  },
-  "license": "MIT",
-  "author": "Coral",
-  "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
-    },
-    "./styles.css": "./src/styles.css"
-  },
-  "files": [
-    "dist",
-    "src/styles.css",
-    "README.md",
-    "LICENSE"
-  ],
-  "sideEffects": [
-    "*.css"
-  ],
-  "scripts": {
-    "build": "vp pack",
-    "dev": "vp pack --watch",
-    "check": "vp check && pnpm typecheck",
-    "typecheck": "tsc --noEmit",
-    "test": "vp test run --passWithNoTests",
-    "lint": "vp lint --fix",
-    "format": "vp fmt",
-    "prepublishOnly": "pnpm build"
-  },
-  "keywords": [
-    "coral",
-    "design-system",
-    "design-tokens",
-    "ui",
-    "ui-components",
-    "react",
-    "components",
-    "jellyfin",
-    "self-hosted",
-    "tailwindcss"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "peerDependencies": {
-    "react": ">=19",
-    "react-dom": ">=19"
-  },
-  "devDependencies": {
-    "@get-coral/oxfmt-config": "^0.1.0",
-    "@get-coral/oxlint-config": "^0.1.0",
-    "@get-coral/tsconfig": "^0.2.0",
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/react": "^16.3.2",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.2.0",
-    "jsdom": "^28.1.0",
-    "publint": "^0.3.25",
-    "typescript": "^5.9.3",
-    "vite": "catalog:",
-    "vite-plus": "catalog:"
-  }
+	"name": "@get-coral/ui",
+	"version": "1.0.2",
+	"description": "Shared Coral UI components and design tokens for building Jellyfin module interfaces",
+	"keywords": [
+		"components",
+		"coral",
+		"design-system",
+		"design-tokens",
+		"jellyfin",
+		"react",
+		"self-hosted",
+		"tailwindcss",
+		"ui",
+		"ui-components"
+	],
+	"homepage": "https://getcoral.dev",
+	"bugs": {
+		"url": "https://github.com/Get-Coral/coral-ui/issues"
+	},
+	"license": "MIT",
+	"author": "Coral",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Get-Coral/coral-ui.git"
+	},
+	"files": [
+		"dist",
+		"src/styles.css",
+		"README.md",
+		"LICENSE"
+	],
+	"type": "module",
+	"sideEffects": [
+		"*.css"
+	],
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		},
+		"./styles.css": "./src/styles.css"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "vp pack",
+		"dev": "vp pack --watch",
+		"check": "vp check && pnpm typecheck",
+		"typecheck": "tsc --noEmit",
+		"test": "vp test run --passWithNoTests",
+		"lint": "vp lint --fix",
+		"format": "vp fmt",
+		"prepublishOnly": "pnpm build"
+	},
+	"devDependencies": {
+		"@get-coral/oxfmt-config": "^0.1.0",
+		"@get-coral/oxlint-config": "^0.1.0",
+		"@get-coral/tsconfig": "^0.2.0",
+		"@testing-library/dom": "^10.4.1",
+		"@testing-library/react": "^16.3.2",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.2.0",
+		"jsdom": "^28.1.0",
+		"publint": "^0.3.25",
+		"typescript": "^5.9.3",
+		"vite": "catalog:",
+		"vite-plus": "catalog:"
+	},
+	"peerDependencies": {
+		"react": ">=19",
+		"react-dom": ">=19"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"packageManager": "pnpm@10.32.1"
 }
